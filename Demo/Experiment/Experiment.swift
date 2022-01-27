@@ -25,7 +25,9 @@ struct Experiment: View {
             //                .background(.white)
                 .overlay(alignment: .topLeading) {
                     Button {
-                        toggleCoin.toggle()
+                        withAnimation {
+                            toggleCoin.toggle()
+                        }
                     } label: {
                         Text("Flip")
                     }
@@ -55,6 +57,7 @@ struct Experiment: View {
                 .background(.green)
                 .edgesIgnoringSafeArea(.top)
         }
+        .navigationViewStyle(.columns)
         .toolbar(content: {
             ToolbarItem(placement: .automatic) {
                 Button {

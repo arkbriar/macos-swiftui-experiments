@@ -27,7 +27,7 @@ struct SplitViewController: NSViewControllerRepresentable {
     func buildSplitViewItems(controller: NSSplitViewController) {
         let viewControllers = self.viewControllers()
         for (i, viewController) in viewControllers.enumerated() {
-            if (i == 0 || i == viewControllers.count - 1) {
+            if (i == 0) {
                 let item = NSSplitViewItem(sidebarWithViewController: viewController)
                 controller.addSplitViewItem(item)
             } else {
@@ -97,7 +97,9 @@ struct SplitViewExample: View {
             //                .background(.white)
                 .overlay(alignment: .topLeading) {
                     Button {
-                        toggleCoin.toggle()
+                        withAnimation {
+                            toggleCoin.toggle()
+                        }
                     } label: {
                         Text("Flip")
                     }
