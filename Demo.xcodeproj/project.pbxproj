@@ -17,8 +17,10 @@
 		383CB819279EB7EB00749CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383CB818279EB7EB00749CC0 /* Assets.xcassets */; };
 		383CB81C279EB7EB00749CC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383CB81B279EB7EB00749CC0 /* Preview Assets.xcassets */; };
 		383CB825279F9C6F00749CC0 /* SplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383CB824279F9C6F00749CC0 /* SplitView.swift */; };
+		38B83AB227A2DF180097A6D5 /* TextViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B83AB127A2DF180097A6D5 /* TextViewImage.swift */; };
 		38C6217027A2C21400A37E4D /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6216F27A2C21400A37E4D /* PDFView.swift */; };
 		38C6217227A2D02F00A37E4D /* PDFThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6217127A2D02F00A37E4D /* PDFThumbnailView.swift */; };
+		38C7D81727A2E1DD00F027D7 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7D81627A2E1DD00F027D7 /* TextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +36,10 @@
 		383CB81B279EB7EB00749CC0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		383CB81D279EB7EB00749CC0 /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
 		383CB824279F9C6F00749CC0 /* SplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitView.swift; sourceTree = "<group>"; };
+		38B83AB127A2DF180097A6D5 /* TextViewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewImage.swift; sourceTree = "<group>"; };
 		38C6216F27A2C21400A37E4D /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
 		38C6217127A2D02F00A37E4D /* PDFThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFThumbnailView.swift; sourceTree = "<group>"; };
+		38C7D81627A2E1DD00F027D7 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		383CB813279EB7E900749CC0 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				38B83AB027A2DF0B0097A6D5 /* TextView */,
 				38C6216E27A2C20900A37E4D /* PDF */,
 				380DBAB527A28996006DEBDF /* Extension */,
 				380DBAB227A2841F006DEBDF /* Experiment */,
@@ -114,6 +119,15 @@
 				380DBAB827A28F9E006DEBDF /* NSViewControllerBuilder.swift */,
 			);
 			path = SplitView;
+			sourceTree = "<group>";
+		};
+		38B83AB027A2DF0B0097A6D5 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				38B83AB127A2DF180097A6D5 /* TextViewImage.swift */,
+				38C7D81627A2E1DD00F027D7 /* TextField.swift */,
+			);
+			path = TextView;
 			sourceTree = "<group>";
 		};
 		38C6216E27A2C20900A37E4D /* PDF */ = {
@@ -198,11 +212,13 @@
 				38C6217027A2C21400A37E4D /* PDFView.swift in Sources */,
 				380DBAB427A2842B006DEBDF /* Experiment.swift in Sources */,
 				38C6217227A2D02F00A37E4D /* PDFThumbnailView.swift in Sources */,
+				38C7D81727A2E1DD00F027D7 /* TextField.swift in Sources */,
 				380DBAB927A28F9E006DEBDF /* NSViewControllerBuilder.swift in Sources */,
 				380DBAAE27A12187006DEBDF /* ViewControllerBuilder.swift in Sources */,
 				383CB817279EB7E900749CC0 /* ContentView.swift in Sources */,
 				383CB815279EB7E900749CC0 /* DemoApp.swift in Sources */,
 				380DBAB727A289AA006DEBDF /* ToolbarItem.swift in Sources */,
+				38B83AB227A2DF180097A6D5 /* TextViewImage.swift in Sources */,
 				383CB825279F9C6F00749CC0 /* SplitView.swift in Sources */,
 				380DBABB27A295A3006DEBDF /* Optional.swift in Sources */,
 			);
